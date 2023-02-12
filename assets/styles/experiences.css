@@ -1,100 +1,104 @@
-.experiences__title{
-    text-align: center;
-    font: var(--font-title);
-    margin: 32px 0px;
+.experiences__title {
+  text-align: center;
+  font: var(--font-title);
+  margin: 32px 0px;
 }
 
 .experiences__list {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
-.experiences__item{
-    background-color: var(--background-main-color);
-    box-shadow: 1px 1px 3px #64748b47;
-    border-radius: 6px;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+.experiences__item {
+  background-color: var(--background-main-color);
+  box-shadow: 1px 1px 3px #64748b47;
+  border-radius: 6px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-
 
 .experiences__item__image {
-    border-radius: 6px 6px 0px 0px;
-    box-shadow: 1px 1px 3px #64748b47;
-    width: 100%;
-    height: auto;
+  border-radius: 6px 6px 0px 0px;
+  box-shadow: 1px 1px 3px #64748b47;
+  width: 100%;
+  height: auto;
 }
 
 .experiences__item__title {
-    font: var(--font-regular);
-    font-weight: 700;
-    /* margin-top: .5em; */
-    margin-top: .5rem;
-    margin-bottom: 1rem;
+  font: var(--font-regular);
+  font-weight: 700;
+  /* margin-top: .5em; */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .experiences__item__description {
-    font-size: 0.875em;
-    line-height: 1.375rem;
-    margin-bottom: 1rem;
+  font-size: 0.875em;
+  line-height: 1.375rem;
+  margin-bottom: 1rem;
 }
 
 .experiences__item__links {
-    display: flex;
-    gap: 1em;
-    margin: .5em 0em;
-    font: var(--font-regular-bold);
+  display: flex;
+  gap: 1em;
+  margin: 0.5em 0em;
+  font: var(--font-regular-bold);
 }
 
-.experiences__item__link{
-    padding: 0.75rem 1rem;
-    box-shadow: 1px 1px 3px #4319498a;
-    border-radius: 6px;
+.experiences__item__link {
+  padding: 0.75rem 1rem;
+  box-shadow: 1px 1px 3px #4319498a;
+  border-radius: 6px;
+}
+
+.experiences__item__link:hover {
+  box-shadow: none;
+  transition: all 400ms;
+  transform: scale(.99);
 }
 
 .experiences__item__link-primary {
-    color: var(--main-color);
-    background-color: transparent;
-    border: 1px solid var(--main-color);
+  color: var(--main-color);
+  background-color: transparent;
+  border: 1px solid var(--main-color);
 }
 .experiences__item__link-secondary {
-    background-color: var(--main-color);
-    color: var(--background-main-color);
+  background-color: var(--main-color);
+  color: var(--background-main-color);
 }
 
-@media screen and (min-width: 768px){
-    .experiences__item__image {
-        height: auto;
-        width: 50%;
-    }
-    .experiences__item {
-        flex-direction: row;
-        gap: 1em;
-    }
+@media screen and (min-width: 768px) {
+  .experiences__item__image {
+    height: auto;
+    width: 50%;
+  }
+  .experiences__item {
+    flex-direction: row;
+    gap: 1em;
+  }
 
-    .experiences__item:nth-child(even){
-        justify-content: space-between;
-    }
+  .experiences__item:nth-child(even) {
+    justify-content: space-between;
+  }
 
-    .experiences__item:nth-child(even) .experiences__item__image{
-        order: 1;
-    }
+  .experiences__item:nth-child(even) .experiences__item__image {
+    order: 1;
+  }
 
-    .experiences__item__image {
-        border-radius: 6px;
-    }
+  .experiences__item__image {
+    border-radius: 6px;
+  }
 
-    .experiences__item__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  .experiences__item__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    /* .experiences__item__title {
+  /* .experiences__item__title {
         margin-bottom: 1em;
     } */
-
 }

@@ -1,77 +1,83 @@
-.header__menu__list{
-    display: none;
+.header__menu__list {
+  display: none;
 }
 
+.header__menu__list__item {
+  border-bottom: 2px solid transparent;
+}
+
+.header__menu__list__item:hover {
+  transition: all 800ms;
+  border-bottom: 2px solid var(--main-color);
+}
 
 .navbar {
-    box-shadow: 0px 1px 3px var(--background-fade1-color);
-    position: fixed;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    top: 0;
-    left: 0;
-    right: 0;
+  box-shadow: 0px 1px 3px var(--background-fade1-color);
+  position: fixed;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-.header .container{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--background-main-color);
+.header .container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-main-color);
 }
 
-.header__presentation{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
+.header__presentation {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .header__presentation__image {
-    height: 32px;
-    width: auto;
+  height: 32px;
+  width: auto;
 }
 
-.header__presentation__title{
-    font-weight: 700;
-    font-size: 1em;
-    line-height: 18.78px;
+.header__presentation__title {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 18.78px;
 }
-.header__menu__email{
-    font: var(--font-thin);
-    font-size: 14px;
-    line-height: 16px;
+.header__menu__email {
+  font: var(--font-thin);
+  font-size: 14px;
+  line-height: 16px;
 }
 
 @media screen and (min-width: 768px) {
-
-    .header__menu__email {
-        font: var(--font-regular-bold);
-    }
+  .header__menu__email {
+    font: var(--font-regular-bold);
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .header__presentation {
-        gap: 1rem;
-    }
+  .header__presentation {
+    gap: 1rem;
+  }
 
-    .navbar nav {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-    }
-    
-    .header__menu__list {
-        display: flex;
-        gap: 2rem;
+  .navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
 
-    }
-    
-    .header__menu__list__item {
-        font: var(--font-regular-semibold);
-    }
+  .header__menu__list {
+    display: flex;
+    gap: 2rem;
+  }
 
-    .header__menu__email {
-        font-size: 1rem;
-    }
+  .header__menu__list__item {
+    font: var(--font-regular-semibold);
+  }
+
+  .header__menu__email {
+    font-size: 1rem;
+  }
 }
