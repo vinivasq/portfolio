@@ -57,7 +57,7 @@
 .experiences__item__link:hover {
   box-shadow: none;
   transition: all 400ms;
-  transform: scale(.99);
+  transform: scale(0.99);
 }
 
 .experiences__item__link-primary {
@@ -68,6 +68,10 @@
 .experiences__item__link-secondary {
   background-color: var(--main-color);
   color: var(--background-main-color);
+}
+
+.disabled {
+  cursor: not-allowed;
 }
 
 @media screen and (min-width: 768px) {
